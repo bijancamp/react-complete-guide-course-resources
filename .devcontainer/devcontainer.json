@@ -1,0 +1,5 @@
+{
+    "name": "Node.js & TypeScript (Non-Root)",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
+    "remoteUser": "node"
+}
