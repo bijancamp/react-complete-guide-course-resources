@@ -12,19 +12,19 @@ export default function Calculator() {
   const [duration, setDuration] = useState(10);
 
   const handleInitialInvestmentChange = e => {
-    setInitialInvestment(e.target.value !== '' ? Number(e.target.value) : 0);
+    setInitialInvestment(e.target.value !== '' ? +e.target.value : 0);
   };
 
   const handleAnnualInvestmentChange = e => {
-    setAnnualInvestment(e.target.value !== '' ? Number(e.target.value) : 0);
+    setAnnualInvestment(e.target.value !== '' ? +e.target.value : 0);
   };
 
   const handleExpectedReturnChange = e => {
-    setExpectedReturn(e.target.value !== '' ? Number(e.target.value) : 0);
+    setExpectedReturn(e.target.value !== '' ? +e.target.value : 0);
   };
 
   const handleDurationChange = e => {
-    setDuration(e.target.value !== '' ? Number(e.target.value) : 0);
+    setDuration(e.target.value !== '' ? +e.target.value : 0);
   };
 
   const investmentResults = calculateInvestmentResults({
